@@ -7,6 +7,12 @@ pipeline {
                 sh 'npm install'
             }
         }
+
+        stage ("Sonar Scan") {
+            steps {
+                sh 'sonar-scannar'
+            }
+        }
     }
 }
 
