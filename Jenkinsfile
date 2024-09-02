@@ -10,7 +10,7 @@ pipeline {
 
         stage ("Sonar Scan") {
             steps {
-                sh 'sonar-scannar'
+                sh 'sonar-scanner'
             }
         }
     }
